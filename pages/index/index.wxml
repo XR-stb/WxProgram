@@ -1,0 +1,90 @@
+<!--pages/index/index.wxml-->
+<view class="container-bgcolor">
+    <view class="container">
+        <view class="topSearch">
+            <image src="/images/search.png" style="height: 45rpx; width: 45rpx;"></image>
+            <input type="text" placeholder="今天想吃点什么" />
+        </view>
+        
+        <view class="foodSwip">
+            <!-- 自动5s滚动，默认true，所以可以不写，循环滚动 -->
+            <swiper autoplay circular="true" interval="2000" indicator-dots='true'>
+                <block wx:for="{{swiperList}}" wx:key="index">
+                     <swiper-item>
+                        <navigator url="{{item.url}}" open-type="switchTab">
+                            <image src="{{item.src}}"></image>
+                        </navigator>
+                    </swiper-item>
+                </block>
+               
+                <!-- <swiper-item>
+                    <navigator url="/pages/shopping/shopping" open-type="switchTab">
+                        <image src="/images/sw1.jpg"></image>
+                    </navigator>
+                </swiper-item>
+                <swiper-item>
+                    <navigator url="/pages/shopping/shopping" open-type="switchTab">
+                        <image src="/images/sw2.jpg"></image>
+                    </navigator>
+                </swiper-item>
+                <swiper-item>
+                    <navigator url="/pages/shopping/shopping" open-type="switchTab">
+                        <image src="/images/sw3.jpg"></image>
+                    </navigator>
+                </swiper-item> -->
+            </swiper>
+        </view>
+
+        <!-- 菜单栏导航 -->
+        <view class="nav">
+            <view class="menu" wx:for="{{navList}}" wx:key="index">
+                <navigator url="{{item.url}}" open-type="switchTab">
+                    <image src="{{item.src}}"></image>
+                    <text>{{item.name}}</text>
+                </navigator>
+             </view>
+        </view>
+
+        <!-- 产品列表 -->
+        <text class="hot"> 热卖产品</text>
+        <view class="wrap">
+            <view class="product" wx:for="{{productList}}" wx:key="index">
+                <image src="{{item.src}}" mode="widthFix"></image>
+                <view class="info">
+                    <text class="pro_name" space="ensp"> {{item.pro_name}} </text>
+                    <text class="price"> \n {{item.price}} </text>
+                </view>
+            </view>
+
+            <!-- 离线版的写法，写死数据，每次需要修改我们的源文件 -->
+            <!-- <view class="product">
+                <image src="/images/product/pro9.jpg" mode="widthFix"></image>
+                <view class="info">
+                    <text class="pro_name" space="ensp"> 小吃 </text>
+                    <text class="price"> \n ￥9.9 </text>
+                </view>
+            </view>
+            <view class="product">
+                <image src="/images/product/pro11.jpg" mode="widthFix"></image>
+                <view class="info">
+                    <text class="pro_name" space="ensp"> 小吃 </text>
+                    <text class="price"> \n ￥9.9 </text>
+                </view>
+            </view>
+            <view class="product">
+                <image src="/images/product/pro10.jpg" mode="widthFix"></image>
+                <view class="info">
+                    <text class="pro_name" space="ensp"> 小吃 </text>
+                    <text class="price"> \n ￥9.9 </text>
+                </view>
+            </view>
+            <view class="product">
+                <image src="/images/product/pro12.jpg" mode="widthFix"></image>
+                <view class="info">
+                    <text class="pro_name" space="ensp"> 小吃 </text>
+                    <text class="price"> \n ￥9.9 </text>
+                </view>
+            </view> -->
+        </view> <!-- wrap -->
+    </view>
+</view>

@@ -1,0 +1,39 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/shopping/shopping",
+        "pages/login/login"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#00a480",
+        "navigationBarTextStyle": "white",
+        "navigationBarTitleText": "飞机外卖",
+        "backgroundColor": "#eeeeee",
+        "backgroundTextStyle": "light",
+        "enablePullDownRefresh": false
+    },
+    "tabBar": {
+        "list": [{
+            "pagePath": "pages/index/index",
+            "text": "主页",
+            "iconPath": "/images/home1.png",
+            "selectedIconPath": "/images/home2.png"
+        },
+        {
+            "pagePath": "pages/shopping/shopping",
+            "text": "购物车",
+            "iconPath": "/images/shopping1.png",
+            "selectedIconPath": "/images/shopping2.png"
+        },
+        {
+            "pagePath": "pages/login/login",
+            "text": "我的",
+            "iconPath": "/images/login1.png",
+            "selectedIconPath": "/images/login2.png"
+        }
+
+    ]
+    },
+
+    "sitemapLocation": "sitemap.json"
+}

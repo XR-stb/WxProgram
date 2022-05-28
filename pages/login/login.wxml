@@ -1,0 +1,49 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+    <view class="info">
+        <image src="/images/phd.jpg"></image>
+        <text>去登录</text>
+    </view>
+    <view class="func">
+        <view class="title">常用功能</view>
+        <view class="mybox">
+            <view class="entity">
+                <image src="/images/home.png"></image>
+                <view class="myfont">个人信息</view>
+            </view>
+            <view class="entity">
+                <image src="/images/home.png"></image>
+                <view class="myfont">个人信息</view>
+            </view>
+            <view class="entity">
+                <image src="/images/home.png"></image>
+                <view class="myfont">个人信息</view>
+            </view>
+            <view class="entity">
+                <image src="/images/home.png"></image>
+                <view class="myfont">个人信息</view>
+            </view>
+        </view>
+    </view>
+    <view class="func">
+        <view class="title">我的服务</view>
+        <view class="mybox">
+            <view class="entity">
+                <image src="/images/home.png"></image>
+                <view class="myfont">个人信息</view>
+            </view>
+            <view class="entity">
+                <image src="/images/home.png"></image>
+                <view class="myfont">个人信息</view>
+            </view>
+            <view class="entity">
+                <image src="/images/home.png"></image>
+                <view class="myfont">个人信息</view>
+            </view>
+            <view class="entity">
+                <image src="/images/home.png"></image>
+                <view class="myfont">个人信息</view>
+            </view>
+        </view>
+    </view>
+</view>
